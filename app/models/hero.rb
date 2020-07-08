@@ -1,17 +1,18 @@
-class Team
+class Hero
   
   attr_reader :name, :power, :bio
  
-  TEAMS = []
+  Heroes = []
  
   def initialize(args)
     @name = args[:name]
     @power = args[:power]
-    TEAMS << self
+    @bio = args[:bio]
+    Heroes << self
   end
  
   def self.all
-    TEAMS
+    Heroes
   end
   
 end
